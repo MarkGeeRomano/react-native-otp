@@ -1,7 +1,7 @@
 const admin = require('firebase-admin')
 const functions = require('firebase-functions')
 const createUser = require('./createUser')
-const serviceAccount = require('../keys/one-time-pw-f02ca-firebase-adminsdk-6vjtx-f889ae8893.json')
+const serviceAccount = require('./keys/pk.json')
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
